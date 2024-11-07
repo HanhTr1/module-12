@@ -2,7 +2,7 @@ import requests
 import json
 from pint import UnitRegistry
 city_name=input("Enter city name: ")
-api_key= "f540fba3af1f42b63f4f4669d3d52443"
+api_key= "3"
 url=f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}"
 response = requests.get(url)
 print(json.dumps(response.json(),indent=2))
